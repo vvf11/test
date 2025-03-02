@@ -301,17 +301,7 @@ function checkLines() {
   }
 }
 
-// Simulated ZKP generation (to be replaced with real SP1 integration)
-function generateProof() {
-  // Simulate sending gameState to a backend for SP1 processing
-  const proof = simulateZKP(gameState);
-  document.getElementById('proof').innerText = `ZKP: ${proof}`;
-}
 
-function simulateZKP(state) {
-  // Placeholder: In reality, this would be computed by SP1 in Rust
-  return btoa(JSON.stringify({ score: state.finalScore, time: state.finalTime }));
-}
 
 showStartScreen();
 </script>
